@@ -69,7 +69,11 @@ Server runs on `http://localhost:3000`
 
 ## API Endpoint
 
-### `POST /api/email/send`
+### `POST /api/v1/email/send`
+
+### `GET /api/v1/email/get`
+
+### `GET /api/v1/email/demo`
 
 #### Request Body
 
