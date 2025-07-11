@@ -1,5 +1,5 @@
 import { asyncHandler } from "../utils/asyncHandler.js";
-import { ApiError } from "../utils/ApiError.js";
+import { ApiError } from "../utils/apiError.js";
 
 const sendEmailViaMockProviderTwo = asyncHandler(
   async ({ to, subject, body }) => {
