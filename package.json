@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "",
-    "dev": "nodemon src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "sufiyaan-mansoori",
   "license": "ISC",
