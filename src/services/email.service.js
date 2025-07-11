@@ -2,6 +2,7 @@ import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import logger from "../utils/logger.js";
+import { sampleEmails } from "../dummy_data/sampleEmail.js";
 import {
   isSent,
   markSent,
@@ -82,5 +83,17 @@ const sendEmail = asyncHandler(async (req, res) => {
 
   return res.status(200).json(new ApiResponse(200, "email sent successfully"));
 });
+const fetchEmails = asyncHandler(async (req, res) => {
+  const statuses = getStatus();
+  return res
+    .status(200)
+    .json(new ApiResponse(200, statuses, "Fetched all email statuses"));
+});
 
-export default sendEmail;
+const fetchSampleEmails = asyncHandler(async (req, res) => {
+  return res
+    .status(200)
+    .json(new ApiResponse(200, sampleEmails, "Sample demo emails for testing"));
+});
+
+export { sendEmail, fetchEmails, fetchSampleEmails };
