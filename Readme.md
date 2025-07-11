@@ -67,13 +67,21 @@ Server runs on `http://localhost:3000`
 
 ---
 
-## API Endpoint
+## API Endpoints
 
 ### `POST /api/v1/email/send`
 
 ### `GET /api/v1/email/get`
 
 ### `GET /api/v1/email/demo`
+
+### API Endpoints post deployment
+
+### `POST https://email-sending-service-v2.onrender.com/api/v1/email/send`
+
+### `GET https://email-sending-service-v2.onrender.com/api/v1/email/get`
+
+### `GET https://email-sending-service-v2.onrender.com/api/v1/email/demo`
 
 #### Request Body
 
@@ -172,7 +180,6 @@ const success = Math.random() > 0.3; // 70% success rate
 
 - [ ] Replace mock providers with real SMTP (e.g., SendGrid, Mailgun)
 - [ ] Add `/status/:id` route
-- [ ] Use Redis for distributed rate limiting + job queue (e.g., BullMQ)
 - [ ] Add persistent database (MongoDB/Postgres)
 
 ---
