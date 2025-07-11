@@ -1,0 +1,19 @@
+{
+  "name": "email-sending-service",
+  "version": "1.0.0",
+  "description": "This is a email sending service ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "sufiyaan-mansoori",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "uuid": "^11.1.0"
+  }
+}
